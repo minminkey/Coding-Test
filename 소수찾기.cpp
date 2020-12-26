@@ -42,6 +42,6 @@ int solution(string Numbers) {
         if(num[i]==0||num[i]==1)    continue;
         answer += findPrimeNumber(num[i]);
     }
-    sort(num.begin(), num.end(), min)
+    
     return answer;
 }
