@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include <iostream>
+#include <algorithm>
 using namespace std;
 
 int solution(vector<vector<int> > land)
