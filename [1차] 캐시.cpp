@@ -18,9 +18,7 @@ int solution(int cacheSize, vector<string> cities) {
     for(int i=0; i<cities.size(); i++){
         list<string>::iterator iter;
         int flag = 1;
-        for(int j=0; j<cities[i].size(); j++){
-            cities[i][j] = tolower(cities[i][j]);
-        }
+        transform(cities[i].begin(), cities[i].end(), cities[i].begin(), ::tolower);
         for(iter = lt.begin(); iter != lt.end(); iter++){
             if(cities[i].compare(*iter)==0){
                 lt.remove(cities[i]);
