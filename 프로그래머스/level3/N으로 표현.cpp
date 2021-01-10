@@ -32,4 +32,5 @@ int solution(int N, int number) {
     }
     if(answer>8)    return -1;
     return answer;
+    
 }
