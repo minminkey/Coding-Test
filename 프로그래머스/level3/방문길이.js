@@ -1,7 +1,8 @@
 function solution(dirs) {
     var answer = 0;
-    let h = Array.from(Array(10), () => Array(10).fill(0))
-    let v = Array.from(Array(10), () => Array(10).fill(0))
+    let h = Array.from(Array(11), () => Array(11).fill(0));
+    let v = Array.from(Array(11), () => Array(11).fill(0));
+    
     let r = 5;
     let c = 5;
     for(let i=0; i<dirs.length; i++){
