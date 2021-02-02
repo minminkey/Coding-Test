@@ -1,4 +1,8 @@
-#include <bits/stdc++.h>
+#include<iostream>
+#include<vector>
+#include<string>
+#include<algorithm>
+
 using namespace std;
 
 int N;
@@ -13,52 +17,6 @@ struct Block{
 };
 struct Block block[10001];
 
-// void down(){
-//     int temp[4] = {5, 5, 5, 5};
-//     for(int r=5; r>=0; r--){
-//         for(int c=0; c<4; c++){
-//             if(green[r][c]==2){
-//                 int s = min(temp[c], temp[c+1]);
-//                 green[r][c] = 0;
-//                 green[r][c+1] = 0;
-//                 green[s][c] = 2;
-//                 green[s][c+1] = 2;
-//                 temp[c] = s-1;
-//                 temp[c+1] = s-1;
-//                 c++;
-//             }
-//             else if(green[r][c]!=0){
-//                 int f = green[r][c];
-//                 green[r][c] = 0;
-//                 green[temp[c]][c] = f;
-//                 temp[c]--;
-//             }
-//         }
-//     }
-// }
-// void right(){
-//     int temp[4] = {5, 5, 5, 5};
-//     for(int c=5; c>=0; c--){
-//         for(int r=0; r<4; r++){
-//             if(blue[r][c]==3){
-//                 int s = min(temp[r], temp[r+1]);
-//                 blue[r][c] = 0;
-//                 blue[r+1][c] = 0;
-//                 blue[r][s] = 3;
-//                 blue[r+1][s] = 3;
-//                 temp[r] = s-1;
-//                 temp[r+1] = s-1;
-//                 r++;
-//             }
-//             else if(blue[r][c]!=0){
-//                 int f = blue[r][c];
-//                 blue[r][c] = 0;
-//                 blue[r][temp[r]] = f;
-//                 temp[r]--;
-//             }
-//         }
-//     }
-// }
 void down(int R){
     for(int r = R; r>0; r--){
         for(int c=0; c<4; c++){
