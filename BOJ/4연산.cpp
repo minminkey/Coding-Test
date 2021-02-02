@@ -10,6 +10,7 @@ string ans;
 
 string oper[2] = {"*", "+"};
 vector<string> a;
+//dfs
 void dfs(long long now, long long t, string op){
     if(flag<op.length()) return;
     if(now==t){
