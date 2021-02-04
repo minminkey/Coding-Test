@@ -12,6 +12,7 @@ struct Node {
     struct Node *left;
     struct Node *right;
 };
+
 struct Node node[10001];
 
 bool cmp(vector<int> a, vector<int> b){
